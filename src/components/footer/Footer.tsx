@@ -12,7 +12,7 @@ export default function Footer({taskName, setTaskName, addJob}: props) {
     <div className='containerFooter'>
         <label>Add to the todo list</label>
         <div className='addFunction'>
-            <input type='text ' placeholder='Add job' onChange={e => setTaskName(e.target.value)} />
+            <input type='text ' placeholder='Add job' value={taskName} onChange={e => setTaskName(e.target.value)} />
             <button onClick={addJob}>ADD ITEM</button>
         </div>
       
